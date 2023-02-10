@@ -1,6 +1,6 @@
 package by.itacademy.alinadarenskikh.javabasics.oop;
 
-public class Person extends Student{
+public class Person extends Student {
     int salary;
 
     public int getSalary() {
@@ -11,7 +11,7 @@ public class Person extends Student{
         this.salary = salary;
     }
 
-    public int getIncome(){
-        return grant+salary;
+    public int getIncome() {
+        return grant + salary;
     }
 }

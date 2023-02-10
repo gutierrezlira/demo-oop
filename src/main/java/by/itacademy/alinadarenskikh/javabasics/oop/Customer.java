@@ -1,8 +1,5 @@
 package by.itacademy.alinadarenskikh.javabasics.oop;
 
-import com.github.javafaker.Faker;
-import com.github.javafaker.IdNumber;
-
 public class Customer {
     private int id;
     private String lastName;
@@ -26,57 +23,43 @@ public class Customer {
     }
 
     public int getId() {
-        return id;
-
-    }
+        return id;}
 
     public void setId(int id) {
-        this.id = id;
-    }
+        this.id = id;}
 
     public String getLastName() {
-        return lastName;
-    }
+        return lastName;}
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+        this.lastName = lastName;}
 
     public String getName() {
-        return name;
-    }
+        return name;}
 
     public void setName(String name) {
-        this.name = name;
-    }
+        this.name = name;}
 
     public String getFathersName() {
-        return fathersName;
-    }
+        return fathersName;}
 
     public void setFathersName(String fathersName) {
-        this.fathersName = fathersName;
-    }
+        this.fathersName = fathersName;}
 
     public String getAddress() {
-        return address;
-    }
+        return address;}
 
     public void setAddress(String address) {
-        this.address = address;
-    }
+        this.address = address;}
 
     public String getCardNumber() {
-        return cardNumber;
-    }
+        return cardNumber;}
 
     public void setCardNumber(String cardNumber) {
-        this.cardNumber = cardNumber;
-    }
+        this.cardNumber = cardNumber;}
 
     public String getBankAccount() {
-        return bankAccount;
-    }
+        return bankAccount;}
 
     public void setBankAccount(String bankAccount) {
         this.bankAccount = bankAccount;
@@ -86,7 +69,7 @@ public class Customer {
     public String toString() {
         return "Customer{" +
                 "id=" + id +
-                ", lastName='" + lastName + '\'' +
+                ", \nlastName='" + lastName + '\'' +
                 ", \nname='" + name + '\'' +
                 ", \nfathersName='" + fathersName + '\'' +
                 ", \naddress='" + address + '\'' +
