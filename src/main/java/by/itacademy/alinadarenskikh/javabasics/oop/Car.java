@@ -9,6 +9,7 @@ public class Car {
     private  double price;
     private String licensePlate;
 
+
     public int getId() {
         return id;
     }
@@ -63,5 +64,18 @@ public class Car {
 
     public void setLicensePlate(String licensePlate) {
         this.licensePlate = licensePlate;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ",\n brand='" + brand + '\'' +
+                ", \nmodel='" + model + '\'' +
+                ", \nyearOfProduction=" + yearOfProduction +
+                ", \ncolor='" + color + '\'' +
+                ", \nprice=" + price +
+                ", \nlicensePlate='" + licensePlate + '\'' +
+                '}';
     }
 }

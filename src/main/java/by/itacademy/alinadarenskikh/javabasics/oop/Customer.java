@@ -68,4 +68,17 @@ public class Customer {
     public void setBankAccount(String bankAccount) {
         this.bankAccount = bankAccount;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                ", \nname='" + name + '\'' +
+                ", \nfathersName='" + fathersName + '\'' +
+                ", \naddress='" + address + '\'' +
+                ", \ncardNumber=" + cardNumber +
+                ", \nbankAccount='" + bankAccount + '\'' +
+                '}';
+    }
 }

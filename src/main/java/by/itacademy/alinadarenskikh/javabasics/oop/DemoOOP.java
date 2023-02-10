@@ -22,13 +22,18 @@ public class DemoOOP {
         customer1.setCardNumber(fake.business().creditCardNumber().hashCode());
         customer1.setBankAccount(fake.finance().iban());
 
-        System.out.println(customer1.getName());
+        System.out.println(customer1.toString());
+
+      /*  System.out.println(customer1.getName());
         System.out.println(customer1.getLastName());
         System.out.println(customer1.getFathersName());
         System.out.println(customer1.getId());
         System.out.println(customer1.getAddress());
         System.out.println(customer1.getCardNumber());
-        System.out.println(customer1.getBankAccount());
+        System.out.println(customer1.getBankAccount());*/
+
+
+
 
 
         Book book1 = new Book();
@@ -39,12 +44,14 @@ public class DemoOOP {
         book1.setPrice(54.45);
         book1.setId(978-5-699-54574-2);
 
-        System.out.println("Название: " + book1.getName());
+        System.out.println(book1.toString());
+
+        /*System.out.println("Название: " + book1.getName());
         System.out.println("Автор: " + book1.getAuthor());
         System.out.println("Год издания: " + book1.getPublicationYear());
         System.out.println("Количество страниц: " + book1.getPages());
         System.out.println("Цена: " + book1.getPrice());
-        System.out.println("ID " + book1.getId());
+        System.out.println("ID " + book1.getId());*/
 
 
         Car car1 = new Car();
@@ -55,5 +62,8 @@ public class DemoOOP {
         car1.setPrice(110_190.0);
         car1.setLicensePlate("AAA555");
         car1.setId(651465);
+
+        System.out.println(car1.toString());
+
     }
 }

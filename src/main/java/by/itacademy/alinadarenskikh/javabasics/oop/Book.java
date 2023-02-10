@@ -66,4 +66,17 @@ public class Book {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", \nname='" + name + '\'' +
+                ", \nauthor='" + author + '\'' +
+                ", \npublisher='" + publisher + '\'' +
+                ", \npublicationYear=" + publicationYear +
+                ", \nnumOfPages=" + numOfPages +
+                ", \nprice=" + price +
+                '}';
+    }
 }
