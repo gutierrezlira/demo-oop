@@ -9,6 +9,18 @@ public class Car {
     private  double price;
     private String licensePlate;
 
+    public Car() {
+    }
+
+    public Car(int id, String brand, String model, int yearOfProduction, String color, double price, String licensePlate) {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+        this.yearOfProduction = yearOfProduction;
+        this.color = color;
+        this.price = price;
+        this.licensePlate = licensePlate;
+    }
 
     public int getId() {
         return id;

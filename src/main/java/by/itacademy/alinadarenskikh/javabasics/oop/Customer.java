@@ -9,8 +9,21 @@ public class Customer {
     private String name;
     private String fathersName;
     private String address;
-    private int cardNumber;
+    private String cardNumber;
     private String bankAccount;
+
+    public Customer() {
+    }
+
+    public Customer(int id, String lastName, String name, String fathersName, String address, String cardNumber, String bankAccount) {
+        this.id = id;
+        this.lastName = lastName;
+        this.name = name;
+        this.fathersName = fathersName;
+        this.address = address;
+        this.cardNumber = cardNumber;
+        this.bankAccount = bankAccount;
+    }
 
     public int getId() {
         return id;
@@ -53,11 +66,11 @@ public class Customer {
         this.address = address;
     }
 
-    public int getCardNumber() {
+    public String getCardNumber() {
         return cardNumber;
     }
 
-    public void setCardNumber(int cardNumber) {
+    public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
 

@@ -19,10 +19,14 @@ public class DemoOOP {
         add = fake.address().fullAddress();
         customer1.setAddress(add);
 
-        customer1.setCardNumber(fake.business().creditCardNumber().hashCode());
+        customer1.setCardNumber(fake.business().creditCardNumber());
         customer1.setBankAccount(fake.finance().iban());
 
         System.out.println(customer1.toString());
+
+        Customer customer2 = new Customer(fake.idNumber().hashCode(), fake.name().firstName() ,fake.name().lastName(), fake.name().lastName(), add, fake.business().creditCardNumber(), fake.finance().iban());
+
+        System.out.println(customer2.toString());
 
       /*  System.out.println(customer1.getName());
         System.out.println(customer1.getLastName());
@@ -63,7 +67,10 @@ public class DemoOOP {
         car1.setLicensePlate("AAA555");
         car1.setId(651465);
 
+        Car car2 = new Car(5555, "BMV", "X6", 2020, "gold", 50_000, "AAA555");
+
         System.out.println(car1.toString());
+        System.out.println(car2.toString());
 
     }
 }
