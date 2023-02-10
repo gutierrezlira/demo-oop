@@ -10,6 +10,21 @@ public class Book {
     private int numOfPages;
     private double price;
 
+    public Book(){
+
+    }
+
+    public Book(int id, String name, String author, String publisher, int publicationYear, int numOfPages, double price) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
+        this.publicationYear = publicationYear;
+        this.numOfPages = numOfPages;
+        this.price = price;
+    }
+
+
     public int getId() {
 
         return id;

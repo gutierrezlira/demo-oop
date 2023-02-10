@@ -33,9 +33,6 @@ public class DemoOOP {
         System.out.println(customer1.getBankAccount());*/
 
 
-
-
-
         Book book1 = new Book();
         book1.setName("Изучаем Java");
         book1.setAuthor("Берт Бейтс, Кэти Сьерра");
@@ -44,7 +41,10 @@ public class DemoOOP {
         book1.setPrice(54.45);
         book1.setId(978-5-699-54574-2);
 
+        Book book2 = new Book(22222, "JAVA", "Ihar Blinov", "EPAM", 2021, 560, 60.0);
+
         System.out.println(book1.toString());
+        System.out.println(book2.toString());
 
         /*System.out.println("Название: " + book1.getName());
         System.out.println("Автор: " + book1.getAuthor());
